@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  outline: none;
+}
+body {
+  background-color: #18191a;
+}
+header {
+  color: #0cd6fa;
+  display: flex;
+  height: 40px;
+  justify-content: center;
+  margin-top: 30px;
+}
+.notepad-icon {
+  padding-right: 10px;
+}
+.container {
+  background-color: #242526;
+  width: 500px;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 100px auto 0;
+}
+.input-task {
+  border: none;
+  border-radius: 5px;
+  width: 300px;
+  height: 40px;
+  padding-left: 10px;
+  background-color: #ffffff;
+  font-size: 18px;
+}
+.btn-add-task {
+  border: none;
+  border-radius: 5px;
+  height: 40px;
+  background-color: #0cd6fa;
+  color: #ffffff;
+  font-size: 18px;
+  padding: 0 15px;
+  float: right;
+  cursor: pointer;
+  font-weight: 800;
+}
+.btn-add-task:hover {
+  opacity: 0.8;
+}
+.btn-add-task:active {
+  opacity: 0.6;
+}
+.list-task {
+  width: 100%;
+  list-style: none;
+  margin-top: 30px;
+}
+.task {
+  background-color: #ffffff;
+  box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.2);
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+.btnTask {
+  height: 25px;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+.task:hover img {
+  opacity: 1;
+}
+.done {
+  background-color: #56ad0f;
+  color: #ffffff;
+  text-decoration: line-through;
+}
